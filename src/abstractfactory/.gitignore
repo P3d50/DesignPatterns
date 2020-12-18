@@ -1,4 +1,4 @@
-*.class
+/AbstractFactoryMain.class
 /Bandeira.class
 /ComunicadorAbstractFactory.class
 /ComunicadorFactory.class
@@ -10,3 +10,4 @@
 /ReceptorMaster.class
 /ReceptorSMS.class
 /ReceptorVisa.class
+/GeradorDeBoleto.class
