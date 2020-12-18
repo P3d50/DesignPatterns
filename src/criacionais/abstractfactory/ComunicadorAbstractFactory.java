@@ -1,14 +1,12 @@
 package criacionais.abstractfactory;
 
-import criacionais.factorymethod.Emissor;
-
 public class ComunicadorAbstractFactory {
 	
 	public ComunicadorFactory getComunicadorFactory(Bandeira bandeira) {
 		
-		 Class clazz;
+		 Class<?> clazz;
 			try {
-				clazz = Class.forName("abstractfactory.ComunicadorFactory"+bandeira);
+				clazz = Class.forName("criacionais.abstractfactory.ComunicadorFactory"+bandeira);
 				return (ComunicadorFactory) clazz.newInstance();
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block

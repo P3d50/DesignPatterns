@@ -4,9 +4,9 @@ public class EmissorCreator {
 	
 	public Emissor getEmissor(EmissorType emissorType) {
 		 
-		Class clazz;
+		Class<?> clazz;
 		try {
-			clazz = Class.forName("factorymethod.Emissor"+emissorType);
+			clazz = Class.forName("criacionais.factorymethod.Emissor"+emissorType);
 			return (Emissor) clazz.newInstance();
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block

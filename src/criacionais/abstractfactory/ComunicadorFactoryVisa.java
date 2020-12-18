@@ -1,7 +1,6 @@
 package criacionais.abstractfactory;
 
 import criacionais.factorymethod.Emissor;
-import criacionais.factorymethod.EmissorSMS;
 
 public class ComunicadorFactoryVisa implements ComunicadorFactory{
 
